@@ -1,0 +1,21 @@
+$primary: #4b59b9;
+$secondary: #a193e5;
+$info: #8e7ca3;
+$error: #d32752;
+$background: #16162D;
+
+
+.dark {
+    background-color: $background;
+    nav, footer{
+        background-color: $primary;
+    }
+    .color-swatcher {
+        color: white;
+    }
+    .card{
+        background-color: #1F1F35;
+        color: white;
+    }
+}
+

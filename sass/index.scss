@@ -1,0 +1,84 @@
+$primary: #e8a649;
+$secondary: #d8c5aa;
+$info: #fadcd5;
+$error: #d32752;
+$background: #ffffff;
+
+$base-width: 300px;
+
+.playground-blog {
+  background-color: $background;
+  text-align: justify;
+
+  .navbar {
+    background: url("../assets/images/banner.png") no-repeat;
+    background-size: cover;
+  }
+  .card {
+    background-color: $background;
+    box-shadow: none;
+    border: none;
+    .card-visual {
+      border-bottom: 2px solid black;
+    }
+  }
+
+  input {
+    border: none;
+  }
+
+  .overlay-header::before {
+    letter-spacing: 0.4em;
+    opacity: 0.05;
+    font-size: 30px;
+    position: relative;
+    top: 70px;
+    text-align: center;
+  }
+  .recommended-header::before {
+    content: "POPULAR";
+  }
+
+  .games-header::before {
+    content: "FUN GAMES";
+  }
+
+  .articles-header::before {
+    content: "LATEST ARTICLES";
+  }
+
+  .articles-header {
+    .card {
+      position: relative;
+      &-visual {
+        border: none;
+      }
+      &-body {
+        position: absolute;
+        top: 60%;
+      }
+    }
+  }
+
+  .gallery-section {
+    .card-container > .card-visual {
+      position: relative;
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .slider-section img {
+    filter: brightness(50%);
+  }
+
+  hr {
+    border: 1px solid #c5a074;
+  }
+}
+
+@import "../devcss/";
