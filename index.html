@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground Blog</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -15,15 +16,26 @@
     <nav class="navbar mb-4">
         <div class="container row">
             <ul class="row gap-2">
-                <li>Home</li>
-                <li>News</li>
-                <li>Contact</li>
+                <li><a href="../index.html" class="active">Home</a></li>
+                <li><a href="./html/card-category.html">Popular</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Games</a>
+                        <div class="dropdown-content bg-white">
+                            <a href="./html/gallery-category.html" class="text-black">Hiding games</a>
+                            <a href="./html/gallery-category.html" class="text-black">Outdoor games</a>
+                            <a href="./html/gallery-category.html" class="text-black">Holidays</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <div><img src="./assets/images/logo.png" alt="logo" class="w-full h-full"></div>
             <ul class="row gap-2">
-                <li>Dropdown</li>
-                <li>Contact</li>
-                <li>Search</li>
+                <li>
+                    <input type="search" placeholder="Search... " name="search" id="search"
+                        class="p-1 br-xs bg-primary-light-8">
+                    <button type="submit" class="btn-secondary br-xs text-black">Search</button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -36,7 +48,8 @@
                     <h1 class="font-xl">10 Habits That Will Change Your Live for the Better </h1>
                     <p class="font-lg">What to do if you’re tired without having actually done anything </p>
                     <p class="font-sm">Written by art.dev * 24th Apr. 2022</p>
-                    <button class="btn-primary text-white pl-4 pr-4 pt-1 pb-1 br-xs" type="submit">Read more</button>
+                    <a class="btn-primary text-white pl-4 pr-4 pt-1 pb-1 br-xs" type="submit"
+                        href="./html/hero-post.html">Read more</a>
                 </div>
                 <div class="hero-img">
                     <img src="./assets/images/hero_img.png" alt="hero image" class="w-full h-full">
@@ -77,11 +90,12 @@
         <section class="column align-center p-2 mt-4 recommended-header overlay-header">
             <div class="column align-center ">
                 <h2>Popular</h2>
-                <a href="#" class="text-primary">See more</a>
+                <a href="./html/card-category.html" class="text-primary">See more</a>
             </div>
             <div class="card-container row gap-2 justify-center">
                 <div class="card col-12-xs col-5-sm col-2-xl">
-                    <div class="card-visual"><img class="w-full h-full" src="./assets/images/child_1.png" alt="child_1"></div>
+                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/child_1.png" alt="child_1">
+                    </div>
                     <div class="card-title">
                         <h6>10 Habits That Will Change Your Live for the Better</h6>
                     </div>
@@ -89,10 +103,11 @@
                         <p class="font-md">What to do if you’re tired without having actually done anything </p>
                         <p class="font-sm">Written by art.dev * 24th Apr. 2022</p>
                     </div>
-                    <a href="#" class="text-primary">Read more</a>
+                    <a href="./html/single-post.html" class="text-primary">Read more</a>
                 </div>
                 <div class="card col-12-xs col-5-sm col-2-xl">
-                    <div class="card-visual"><img class="w-full h-full" src="./assets/images/child_1.png" alt="child_1"></div>
+                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/child_4.png" alt="child_4">
+                    </div>
                     <div class="card-title">
                         <h6>10 Habits That Will Change Your Live for the Better</h6>
                     </div>
@@ -100,10 +115,11 @@
                         <p class="font-md">What to do if you’re tired without having actually done anything </p>
                         <p class="font-sm">Written by art.dev * 24th Apr. 2022</p>
                     </div>
-                    <a href="#" class="text-primary">Read more</a>
+                    <a href="./html/single-post.html" class="text-primary">Read more</a>
                 </div>
                 <div class="card col-12-xs col-5-sm col-2-xl">
-                    <div class="card-visual"><img class="w-full h-full" src="./assets/images/child_1.png" alt="child_1"></div>
+                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/child_1.png" alt="child_1">
+                    </div>
                     <div class="card-title">
                         <h6>10 Habits That Will Change Your Live for the Better</h6>
                     </div>
@@ -111,10 +127,11 @@
                         <p class="font-md">What to do if you’re tired without having actually done anything </p>
                         <p class="font-sm">Written by art.dev * 24th Apr. 2022</p>
                     </div>
-                    <a href="#" class="text-primary">Read more</a>
+                    <a href="./html/single-post.html" class="text-primary">Read more</a>
                 </div>
                 <div class="card col-12-xs col-5-sm col-2-xl">
-                    <div class="card-visual"><img class="w-full h-full" src="./assets/images/child_1.png" alt="child_1"></div>
+                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/hero_img.png" alt="child_4">
+                    </div>
                     <div class="card-title">
                         <h6>10 Habits That Will Change Your Live for the Better</h6>
                     </div>
@@ -122,7 +139,7 @@
                         <p class="font-md">What to do if you’re tired without having actually done anything </p>
                         <p class="font-sm">Written by art.dev * 24th Apr. 2022</p>
                     </div>
-                    <a href="#" class="text-primary">Read more</a>
+                    <a href="./html/single-post.html" class="text-primary">Read more</a>
                 </div>
             </div>
         </section>
@@ -146,44 +163,44 @@
         <section class="gallery-section mt-4 column align-center justify-center overlay-header games-header p-2">
             <div class="column align-center">
                 <h2>Let's play!</h2>
-                <a href="#" class="text-primary">See more</a>
+                <a href="./html/gallery-category.html" class="text-primary">See more</a>
             </div>
             <div class="card-container row gap-2 align-flex-start justify-center">
                 <div class="card-visual col-12-xs col-5-sm col-4-xl h-lg">
                     <img src="./assets/images/child_5.png" alt="child_1" class="w-full h-full">
-                    <button class="btn-white text-primary br-none">See more</button>
+                    <a class="btn-white text-primary br-none" href="./html/single-post.html">Tag games</a>
                 </div>
                 <div class="card-visual col-12-xs col-5-sm col-2-xl h-lg">
                     <img src="./assets/images/child_2.png" alt="child_2" class="w-full h-full">
-                    <button class="btn-white text-primary br-none">See more</button>
+                    <a class="btn-white text-primary br-none" href="./html/single-post.html">Hiding games</a>
                 </div>
                 <div class="card-visual col-12-xs col-5-sm col-4-xl h-lg">
                     <img src="./assets/images/child_3.png" alt="child_3" class="w-full h-full">
-                    <button class="btn-white text-primary br-none">See more</button>
+                    <a class="btn-white text-primary br-none" href="./html/single-post.html"> Games with equipment</a>
                 </div>
                 <div class="card-visual col-12-xs col-5-sm col-2-xl h-lg">
                     <img src="./assets/images/child_1.png" alt="child_1" class="w-full h-full">
-                    <button class="btn-white text-primary br-none">See more</button>
+                    <a class="btn-white text-primary br-none" href="./html/single-post.html">Jumping games</a>
                 </div>
                 <div class="card-visual col-12-xs col-5-sm col-2-xl h-lg">
                     <img src="./assets/images/child_4.png" alt="child_4" class="w-full h-full">
-                    <button class="btn-white text-primary br-none">See more</button>
+                    <a class="btn-white text-primary br-none" href="./html/single-post.html">Memory games</a>
                 </div>
                 <div class="card-visual col-12-xs col-5-sm col-6-xl h-lg">
                     <img src="./assets/images/child_5.png" alt="child_5" class="w-full h-full">
-                    <button class="btn-white text-primary br-none">See more</button>
+                    <a class="btn-white text-primary br-none" href="./html/single-post.html">Parlour games</a>
                 </div>
                 <div class="card-visual col-12-xs col-5-sm col-4-xl h-lg">
                     <img src="./assets/images/child_3.png" alt="child_1" class="w-full h-full">
-                    <button class="btn-white text-primary br-none">See more</button>
+                    <a class="btn-white text-primary br-none" href="./html/single-post.html">Hand games</a>
                 </div>
                 <div class="card-visual col-12-xs col-5-sm col-2-xl h-lg">
                     <img src="./assets/images/child_4.png" alt="child_6" class="w-full h-full">
-                    <button class="btn-white text-primary br-none">See more</button>
+                    <a class="btn-white text-primary br-none" href="./html/single-post.html">Co-op games</a>
                 </div>
                 <div class="card-visual col-12-xs col-5-sm col-4-xl h-lg">
                     <img src="./assets/images/child_6.png" alt="child_6" class="w-full h-full">
-                    <button class="btn-white text-primary br-none">See more</button>
+                    <a class="btn-white text-primary br-none" href="./html/single-post.html">Multiplayer games</a>
                 </div>
             </div>
         </section>
@@ -192,10 +209,10 @@
         <section class="slider-section mt-4 column align-center justify-center overlay-header articles-header p-2">
             <div class="column gap-2 align-center">
                 <h2>Recent posts</h2>
-                <a href="#" class="text-primary">See more</a>
+                <a href="./html/card-category.html" class="text-primary">See more</a>
             </div>
             <div class="card-container row gap-2 justify-center">
-                <div class="card h-lg">
+                <a class="card h-lg" href="./html/single-post.html">
                     <div class="card-visual">
                         <img src="./assets/images/child_6.png" alt="child_6" class="w-full h-lg">
                     </div>
@@ -203,34 +220,34 @@
                         <h5 class="font-md">How to have fun with your kid</h5>
                         <p class="font-sm">Written by art.dev * 24th Apr. 2022</p>
                     </div>
-                </div>
-                <div class="card h-lg">
+                </a>
+                <a class="card h-lg" href="./html/single-post.html">
                     <div class="card-visual">
-                        <img src="./assets/images/child_6.png" alt="child_6" class="w-full h-lg">
+                        <img src="./assets/images/child_5.png" alt="child_6" class="w-full h-lg">
                     </div>
                     <div class="card-body p-2 text-white">
                         <h5 class="font-md">How to have fun with your kid</h5>
                         <p class="font-sm">Written by art.dev * 24th Apr. 2022</p>
                     </div>
-                </div>
-                <div class="card h-lg">
+                </a>
+                <a class="card h-lg" href="./html/single-post.html">
                     <div class="card-visual">
-                        <img src="./assets/images/child_6.png" alt="child_6" class="w-full h-lg">
+                        <img src="./assets/images/child_2.png" alt="child_6" class="w-full h-lg">
                     </div>
                     <div class="card-body p-2 text-white">
                         <h5 class="font-md">How to have fun with your kid</h5>
                         <p class="font-sm">Written by art.dev * 24th Apr. 2022</p>
                     </div>
-                </div>
-                <div class="card h-lg">
+                </a>
+                <a class="card h-lg" href="./html/single-post.html">
                     <div class="card-visual">
-                        <img src="./assets/images/child_6.png" alt="child_6" class="w-full h-lg">
+                        <img src="./assets/images/child_3.png" alt="child_6" class="w-full h-lg">
                     </div>
                     <div class="card-body p-2 text-white">
                         <h5 class="font-md">How to have fun with your kid</h5>
                         <p class="font-sm">Written by art.dev * 24th Apr. 2022</p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 
@@ -241,7 +258,7 @@
                     <h2>Playground</h2>
                     <p>What to do if you’re tired without having actually done anything </p>
                 </div>
-                <div class="row gap-2">
+                <div class="row gap-2 mt-2">
                     <div class="column gap-2">
                         <div>
                             <p>About us</p>
