@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground Blog</title>
     <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body class="playground-blog">
     <!-- navigation bar -->
-    <nav class="navbar mb-4">
+    <nav class="navbar">
         <div class="container row">
             <ul class="row gap-2">
                 <li><a href="../index.html" class="active">Home</a></li>
@@ -34,13 +34,28 @@
                 <li>
                     <input type="search" placeholder="Search... " name="search" id="search"
                         class="p-1 br-xs bg-primary-light-8">
-                    <button type="submit" class="btn-secondary br-xs text-black">Search</button>
+                    <button class="btn-secondary br-xs text-black search-btn">Search</button>
                 </li>
             </ul>
         </div>
     </nav>
 
     <main class="column gap-3">
+        <section class="p-2 column justify-center align-center" id="popular-searches">
+            <h3>Popular searches</h3>
+            <ul id="myUL" class="p-2 column align-center">
+                <li><a href="./html/hero-post.html">10 Habits That Will Change Your Live for the Better</a></li>
+                <li><a href="./html/single-post.html">Tag Games</a></li>
+    
+                <li><a href="./html/single-post.html">Board Games</a></li>
+                <li><a href="./html/single-post.html">Outdoor Games</a></li>
+    
+                <li><a href="./html/single-post.html">Hide games</a></li>
+                <li><a href="./html/single-post.html">Games for the whole family</a></li>
+                <li><a href="./html/single-post.html">Holidays</a></li>
+            </ul>
+        </section>
+        
         <!-- hero area -->
         <section class="hero-section container column gap-2 align-flex-start mt-4">
             <div class="hero-container container row justify-space-between">
@@ -94,7 +109,8 @@
             </div>
             <div class="card-container row gap-2 justify-center">
                 <div class="card col-12-xs col-5-sm col-2-xl">
-                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/child_1.png" alt="child_1">
+                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/child_1.png"
+                            alt="child_1">
                     </div>
                     <div class="card-title">
                         <h6>10 Habits That Will Change Your Live for the Better</h6>
@@ -106,7 +122,8 @@
                     <a href="./html/single-post.html" class="text-primary">Read more</a>
                 </div>
                 <div class="card col-12-xs col-5-sm col-2-xl">
-                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/child_4.png" alt="child_4">
+                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/child_4.png"
+                            alt="child_4">
                     </div>
                     <div class="card-title">
                         <h6>10 Habits That Will Change Your Live for the Better</h6>
@@ -118,7 +135,8 @@
                     <a href="./html/single-post.html" class="text-primary">Read more</a>
                 </div>
                 <div class="card col-12-xs col-5-sm col-2-xl">
-                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/child_1.png" alt="child_1">
+                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/child_1.png"
+                            alt="child_1">
                     </div>
                     <div class="card-title">
                         <h6>10 Habits That Will Change Your Live for the Better</h6>
@@ -130,7 +148,8 @@
                     <a href="./html/single-post.html" class="text-primary">Read more</a>
                 </div>
                 <div class="card col-12-xs col-5-sm col-2-xl">
-                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/hero_img.png" alt="child_4">
+                    <div class="card-visual pb-1"><img class="w-full h-full" src="./assets/images/hero_img.png"
+                            alt="child_4">
                     </div>
                     <div class="card-title">
                         <h6>10 Habits That Will Change Your Live for the Better</h6>
@@ -332,5 +351,6 @@
         </footer>
     </main>
 </body>
+<script src="./js/index.js"></script>
 
 </html>

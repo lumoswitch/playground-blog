@@ -14,6 +14,15 @@ $base-width: 300px;
     font-weight: bold;
     text-decoration: underline;
   }
+
+  #popular-searches {
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    & >h3{
+      text-align: center;
+    }
+  }
   .navbar {
     background: url("../assets/images/banner.png") no-repeat;
     background-size: cover;
@@ -60,10 +69,9 @@ $base-width: 300px;
     background-color: $background;
     box-shadow: none;
     border: none;
+    width: $base-width;
     .card-visual {
       border-bottom: 2px solid black;
-      width: 300px;
-      height: 300px;
     }
   }
 
@@ -71,6 +79,13 @@ $base-width: 300px;
     border: none;
   }
 
+  .-articles {
+    .card-visual {
+      border-bottom: 2px solid black;
+      width: 300px;
+      height: 300px;
+    }
+  }
   .overlay-header::before {
     letter-spacing: 0.4em;
     opacity: 0.05;
