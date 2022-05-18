@@ -38,6 +38,9 @@ Install gulp-sass and gulp-purgecss:
 
 ```bash
 npm i gulp-sass
+```
+
+```bash
 npm i gulp-purgecss
 ```
 
